@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="icon" href="image/bookmark.png" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap"
+        rel="stylesheet">
+
+    <!-- fontawesome file-->
+    <link rel="stylesheet" href="fontawesome-free-6.6.0-web/css/all.min.css ">
+    <!-- bootstrap file -->
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.min.css" rel="stylesheet"> 
+    <!-- css file -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header class="position-relative vh-100 ">
+        <div class="container d-flex flex-column justify-content-center align-items-center py-4">
+            <h1 class="py-2 position-relative">Bookmarker</h1>
+            <div
+                class="bookmark-body w-100 p-3 py-4 mt-5 d-flex flex-column justify-content-center align-items-center gap-4">
+                <h2>
+                    <i class="fa-solid fa-bookmark"></i>
+                    Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark"></i>
+                </h2>
+                <div  class=" w-100">
+                    <label for="bookmarkName" class="pb-2 fw-semibold">
+                        <i class="fa-solid fa-book-bookmark pe-2"></i>
+                        Site Name</label>
+                    <input id="setName" type="text" placeholder="Bookmark Name" class="form-control" id="bookmarkName">
+                </div>
+                <div class="w-100">
+                    <label for="bookmarkURL" class="pb-2 fw-semibold">
+                        <i class="fa-solid fa-link pe-2"></i>Site URL</label>
+                    <input id="setURL" type="url" placeholder="Website URL" class="form-control" id="bookmarkURL">
+                </div>
+                <button class="btn btn-submit px-5" id="submitBtn">Submit</button>
+            </div>
+            <table class="table mt-4 text-center bg-light position-relative">
+                <thead>
+                    <tr>
+                        <th class="text-capitalize">index</th>
+                        <th class="text-capitalize">Website Name</th>
+                        <th class="text-capitalize">Visit</th>
+                        <th class="text-capitalize">Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tableContent">
+
+                </tbody>
+            </table>
+        </div>
+    </header>
+
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
